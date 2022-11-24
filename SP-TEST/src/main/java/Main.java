@@ -10,9 +10,9 @@ public class Main {
     public static void main(String[] args) throws Exception {
 
         Sub_Comanda sub_comanda = new Sub_Comanda("Marea Comanda");
-        Pizza pizza = new Pizza("Prosciuto","R1");
-        Paste paste = new Paste("Fabreze","R2");
-        Salata salata = new Salata("Coleslaw","KFC");
+        Pizza pizza = new Pizza("Prosciuto","R1",21.);
+        Paste paste = new Paste("Fabreze","R2",16.);
+        Salata salata = new Salata("Coleslaw","KFC",43.);
         sub_comanda.add(pizza);
         sub_comanda.add(salata);
         System.out.println("Salata adaugata :");

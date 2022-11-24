@@ -7,11 +7,11 @@ public class Pizza implements Comanda,PizzaInterface, Vizitee {
     private final String Name;
     private  Double cost = (double) 0;
 
-    public Pizza(String name, String Restaurant) {
+    public Pizza(String name, String Restaurant, Double cost) {
 
         this.Name = name;
         this.Restaurnat = Restaurant;
-
+        this.cost = cost;
 
     }
 
@@ -49,8 +49,8 @@ public class Pizza implements Comanda,PizzaInterface, Vizitee {
 
     @Override
     public Double getCost() {
-        double rand = 1;
-        return rand;
+
+        return this.cost;
     }
 
     @Override

@@ -4,26 +4,26 @@ package Models;
 public class Paste implements PasteInterface, Comanda,Vizitee{
 
 
-    private Double Time;
+
     private final String Restaurnat;
     private final String Name;
 
     private  Double cost = (double) 0;
 
-    public Paste( String name, String Restaurant) {
+    public Paste( String name, String Restaurant, Double cost) {
 
         this.Name = name;
         this.Restaurnat = Restaurant;
+        this.cost = cost;
 
 
-        cost = getCost();
     }
 
     @Override
     public String toString() {
         return "Paste{" +
-                "Time=" + Time +
-                ", Restaurnat='" + Restaurnat + '\'' +
+
+                "Restaurnat='" + Restaurnat + '\'' +
                 ", Name='" + Name + '\'' +
                 ", cost=" + cost +
                 '}';
@@ -63,7 +63,7 @@ public class Paste implements PasteInterface, Comanda,Vizitee{
 
     @Override
     public Double getCost() {
-        return 2.;
+        return this.cost;
     }
 
 

@@ -9,14 +9,14 @@ public class Salata  implements Comanda,SalataInterface , Vizitee{
 
     private Double cost = (double) 0;
 
-    public Salata(String name, String Restaurant) {
+    public Salata(String name, String Restaurant, Double cost) {
 
 
         this.Restaurnat = Restaurant;
         Name = name;
 
 
-        this.cost = getCost();
+        this.cost = cost;
     }
 
 
@@ -63,7 +63,7 @@ public class Salata  implements Comanda,SalataInterface , Vizitee{
     @Override
     public Double getCost() {
 
-        return 3.;
+        return this.cost;
     }
 
 }
