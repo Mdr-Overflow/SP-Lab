@@ -1,7 +1,7 @@
 package Models;
 
 
-public class Salata  implements Comanda,SalataInterface , Vizitee{
+public class Salata  implements Comanda, Vizitee{
 
 
     private final String Restaurnat;
@@ -56,14 +56,10 @@ public class Salata  implements Comanda,SalataInterface , Vizitee{
 
     @Override
     public Double getCostComanda() {
-        return getCost();
-    }
-
-
-    @Override
-    public Double getCost() {
-
         return this.cost;
     }
+
+
+
 
 }

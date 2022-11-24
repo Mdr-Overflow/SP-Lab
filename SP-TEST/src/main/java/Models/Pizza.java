@@ -1,6 +1,6 @@
 package Models;
 
-public class Pizza implements Comanda,PizzaInterface, Vizitee {
+public class Pizza implements Comanda, Vizitee {
 
 
     private final String Restaurnat;
@@ -43,15 +43,10 @@ public class Pizza implements Comanda,PizzaInterface, Vizitee {
 
     @Override
     public Double getCostComanda() {
-        return getCost();
-    }
-
-
-    @Override
-    public Double getCost() {
-
         return this.cost;
     }
+
+
 
     @Override
     public String toString() {

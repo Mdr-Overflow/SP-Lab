@@ -19,14 +19,14 @@ public class ComandaStats implements Vizitor {
     @Override
     public void vizitPizza(Pizza pizza, Double cost) {
         System.out.println("Am vizitat " + pizza.toString());
-        costPizza+=pizza.getCost();
+        costPizza+=pizza.getCostComanda();
 
     }
 
     @Override
     public void vizitPaste(Paste paste, Double cost) {
         System.out.println("Am vizitat " + paste.toString());
-        costPaste+= paste.getCost();
+        costPaste+= paste.getCostComanda();
 
 
     }
@@ -34,7 +34,7 @@ public class ComandaStats implements Vizitor {
     @Override
     public void vizitSalata(Salata salata, Double cost) {
         System.out.println("Am vizitat " + salata.toString());
-        costSalata+= salata.getCost();
+        costSalata+= salata.getCostComanda();
 
 
     }

@@ -1,7 +1,7 @@
 package Models;
 
 
-public class Paste implements PasteInterface, Comanda,Vizitee{
+public class Paste implements  Comanda,Vizitee{
 
 
 
@@ -57,14 +57,11 @@ public class Paste implements PasteInterface, Comanda,Vizitee{
 
     @Override
     public Double getCostComanda() {
-        return getCost();
-    }
-
-
-    @Override
-    public Double getCost() {
         return this.cost;
     }
+
+
+
 
 
 }
